@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultorio Médico Dra. Allison Rogers</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Consultorio Médico Dra. Allison Rogers</h1>
+        <nav>
+            <a href="#servicios">Servicios</a>
+            <a href="#contacto">Solicitar Cita</a>
+            <a href="#ubicacion">Ubicación</a>
+        </nav>
+    </header>
+
+    <section id="inicio">
+        <h2>Bienvenido</h2>
+        <p>Atención médica personalizada con más de 15 años de experiencia en medicina general y preventiva.</p>
+    </section>
+
+    <section id="servicios">
+        <h2>Servicios</h2>
+        <ul>
+            <li><a href="consulta-general.html">Consulta general</a></li>
+            <li><a href="chequeos-preventivos.html">Chequeos preventivos</a></li>
+            <li><a href="enfermedades-cronicas.html">Atención a enfermedades crónicas</a></li>
+            <li><a href="certificados-medicos.html">Certificados médicos</a></li>
+        </ul>
+    </section>
+
+    <section id="contacto">
+        <h2>Solicitar Cita</h2>
+        <form id="citaForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" required>
+
+            <label for="fecha">Fecha deseada:</label>
+            <input type="date" id="fecha" required>
+
+            <label for="motivo">Motivo de la consulta:</label>
+            <textarea id="motivo" required></textarea>
+
+            <button type="submit">Enviar solicitud</button>
+        </form>
+        <p id="mensajeExito" style="display:none; color:green;">¡Su cita ha sido registrada! Le contactaremos pronto.</p>
+    </section>
+
+    <section id="ubicacion">
+        <h2>Ubicación y Horarios</h2>
+        <p>Av. Principal #123, Santo Domingo, República Dominicana</p>
+        <p>Lunes a Viernes: 9:00 AM - 5:00 PM</p>
+        <p>Sábados: 9:00 AM - 1:00 PM</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Consultorio Médico Dra. Allison Rogers</p>
+    </footer>
+
+    <script src="javascript/script.js"></script>
+</body>
+</html>
